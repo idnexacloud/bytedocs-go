@@ -1,4 +1,4 @@
-module github.com/aibnuhibban/bytedocs
+module github.com/idnexacloud/bytedocs
 
 go 1.23.0
 
