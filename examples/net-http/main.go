@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
-	"github.com/aibnuhibban/bytedocs/pkg/parser"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/parser"
 )
 
 type User struct {

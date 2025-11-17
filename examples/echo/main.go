@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
-	_ "github.com/aibnuhibban/bytedocs/pkg/llm"
-	"github.com/aibnuhibban/bytedocs/pkg/parser"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
+	_ "github.com/idnexacloud/bytedocs-go/pkg/llm"
+	"github.com/idnexacloud/bytedocs-go/pkg/parser"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )

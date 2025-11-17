@@ -1,6 +1,6 @@
 package core
 
-import "github.com/aibnuhibban/bytedocs/pkg/ai"
+import "github.com/idnexacloud/bytedocs-go/pkg/ai"
 
 // Aliases for backward compatibility - delegate to ai package
 type LLMClientFactory = ai.ClientFactory

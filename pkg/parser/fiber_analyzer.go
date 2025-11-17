@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 // FiberHandlerMetadata stores extracted documentation data for a Fiber handler function.

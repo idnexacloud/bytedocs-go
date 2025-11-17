@@ -11,7 +11,7 @@ import (
 	"strings"
 	"text/template"
 
-	_ "github.com/aibnuhibban/bytedocs/pkg/llm"
+	_ "github.com/idnexacloud/bytedocs-go/pkg/llm"
 	"gopkg.in/yaml.v3"
 )
 

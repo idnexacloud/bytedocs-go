@@ -15,7 +15,7 @@ import (
 	"sync"
 	"unicode"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 type HandlerMetadata struct {

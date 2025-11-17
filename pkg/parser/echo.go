@@ -12,7 +12,7 @@ import (
 	"sync"
 
 	"github.com/labstack/echo/v4"
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 // Global registry for Echo route tracking

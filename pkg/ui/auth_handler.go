@@ -3,7 +3,7 @@ package ui
 import (
 	"net/http"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 // NewAuthenticatedHandler creates a UI handler with authentication middleware

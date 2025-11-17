@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 // Global registry for net/http route tracking

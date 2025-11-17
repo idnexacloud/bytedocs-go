@@ -3,7 +3,7 @@ package core
 import (
 	"reflect"
 
-	"github.com/aibnuhibban/bytedocs/pkg/ai"
+	"github.com/idnexacloud/bytedocs-go/pkg/ai"
 )
 
 // APIInfo represents basic API information

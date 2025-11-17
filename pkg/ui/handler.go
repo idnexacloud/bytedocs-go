@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/aibnuhibban/bytedocs/pkg/ai"
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/ai"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 //go:embed template.html

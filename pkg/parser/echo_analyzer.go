@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 // EchoHandlerMetadata stores extracted documentation data for an Echo handler function.

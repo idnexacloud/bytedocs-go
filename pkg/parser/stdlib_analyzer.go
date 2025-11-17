@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/aibnuhibban/bytedocs/pkg/core"
+	"github.com/idnexacloud/bytedocs-go/pkg/core"
 )
 
 // StdlibHandlerMetadata stores extracted documentation data for a stdlib handler function.

@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/joho/godotenv"
-	"github.com/aibnuhibban/bytedocs/pkg/ai"
+	"github.com/idnexacloud/bytedocs-go/pkg/ai"
 )
 
 // LoadConfigFromEnv loads configuration from environment variables

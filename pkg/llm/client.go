@@ -1,7 +1,7 @@
 package llm
 
 import (
-	"github.com/aibnuhibban/bytedocs/pkg/ai"
+	"github.com/idnexacloud/bytedocs-go/pkg/ai"
 )
 
 // init registers all LLM client factories

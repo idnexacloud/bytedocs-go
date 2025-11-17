@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aibnuhibban/bytedocs/pkg/ai"
+	"github.com/idnexacloud/bytedocs-go/pkg/ai"
 	"github.com/openai/openai-go/v2"
 	"github.com/openai/openai-go/v2/option"
 )
