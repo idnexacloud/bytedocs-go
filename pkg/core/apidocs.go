@@ -1,11 +1,10 @@
 package core
 
 import (
+	_ "embed"
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"os"
-	"path/filepath"
 	"reflect"
 	"regexp"
 	"strings"
@@ -14,6 +13,9 @@ import (
 	_ "github.com/idnexacloud/bytedocs-go/pkg/llm"
 	"gopkg.in/yaml.v3"
 )
+
+//go:embed template.html
+var templateHTML string
 
 type APIDocs struct {
 	config        *Config
@@ -559,14 +561,8 @@ func (a *APIDocs) serveReactApp(w http.ResponseWriter, r *http.Request) {
 	docsJSON, _ := json.Marshal(a.documentation)
 	configJSON, _ := json.Marshal(a.config)
 
-	templatePath := filepath.Join("..", "..", "pkg", "ui", "template.html")
-	templateContent, err := os.ReadFile(templatePath)
-	if err != nil {
-		a.serveBasicTemplate(w, r)
-		return
-	}
-
-	tmpl, err := template.New("docs").Parse(string(templateContent))
+	// Use embedded template
+	tmpl, err := template.New("docs").Parse(templateHTML)
 	if err != nil {
 		http.Error(w, "Template parsing error: "+err.Error(), http.StatusInternalServerError)
 		return
