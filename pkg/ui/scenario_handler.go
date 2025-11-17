@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"strconv"
 	"strings"
 	"time"
 )
@@ -299,46 +298,4 @@ func (h *Handler) importScenarios(w http.ResponseWriter, r *http.Request) {
 	}
 
 	json.NewEncoder(w).Encode(response)
-}
-
-// executeScenario executes a scenario and returns results
-func (h *Handler) executeScenario(w http.ResponseWriter, r *http.Request, scenarioID string) {
-	w.Header().Set("Content-Type", "application/json")
-
-	scenario, exists := scenarios[scenarioID]
-	if !exists {
-		http.Error(w, "Scenario not found", http.StatusNotFound)
-		return
-	}
-
-	// TODO: Implement actual scenario execution logic
-	// For now, return mock execution results
-
-	results := map[string]interface{}{
-		"scenario_id":  scenario.ID,
-		"status":       "completed",
-		"started_at":   time.Now(),
-		"completed_at": time.Now().Add(time.Second * 5),
-		"duration_ms":  5000,
-		"total_requests": len(scenario.Requests),
-		"successful":   len(scenario.Requests),
-		"failed":       0,
-		"results":      []map[string]interface{}{},
-	}
-
-	// Mock individual request results
-	for i, req := range scenario.Requests {
-		result := map[string]interface{}{
-			"request_id":   req.ID,
-			"method":       req.Method,
-			"url":         req.URL,
-			"status_code": 200,
-			"duration_ms": 100 + i*50,
-			"success":     true,
-			"response":    map[string]interface{}{"status": "ok"},
-		}
-		results["results"] = append(results["results"].([]map[string]interface{}), result)
-	}
-
-	json.NewEncoder(w).Encode(results)
 }
